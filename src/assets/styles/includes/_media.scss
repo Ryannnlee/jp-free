@@ -1,0 +1,15 @@
+//SCSS media query
+$wide: 'screen and (min-width: 1800px)' !default;
+$desktop: 'screen and (min-width: 1200px)' !default;
+$tablet-landscape: 'screen and (min-width: 900px)' !default;
+$tablet-portrait: 'screen and (min-width: 600px)' !default;
+$phone: 'screen and (max-width: 600px)' !default;
+
+//
+@mixin media($query: $phone) {
+    @media #{$query} {
+        @content;
+    }
+}
+
+// @include media($wide) {}
